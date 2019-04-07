@@ -1,6 +1,6 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Егор Лимачев](https://up.htmlacademy.ru/adaptive/16/user/167879).
+* Студент: [Егор Лимачев Геннадьевич](https://up.htmlacademy.ru/adaptive/16/user/167879).
 * Наставник: [Сергей Рубец](https://htmlacademy.ru/profile/amator).
 
 ---
