@@ -6,10 +6,10 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" src="#">
+      <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Logo Cat Energy">
       </a>
-      <a class="page-header__logo" src="#">
+      <a class="page-header__logo">
         <img class="page-header__logo-name" src="img/logo-mobile-header.svg" width="320" height="65" alt="name Cate Energy">
       </a>
       <nav class="main-nav">
@@ -69,12 +69,18 @@
           <h3 class="example__title">Живой пример</h3>
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="example__data">
-            <span class="example__data--left">5 кг</span> снижение веса
-            <span class="example__data--right">60 дней</span> затрачено времени
+            <div class="example__list">
+              <p class="example-count">
+                <span class="count__result">5 кг</span> снижение веса
+              </p>
+              <p class="example-count">
+                <span class="count__result">60 дней</span> затрачено времени
+              </p>
+            </div>
             <p class="example__lost">Затраты на питание: 15 000 руб.</p>
             <div class="example__total">
-              <button class="example__button--was button" type="button">Было</button>
-              <button class="example__button--will button" type="button">Стало</button>
+              <button class="example__button button" type="button">Было</button>
+              <button class="example__button button" type="button">Стало</button>
             </div>
           </div>
         </div>
@@ -111,9 +117,9 @@
         </div>
 
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__link--htmllogo">
-            <span class="visually-hidden">Логотип HTML Academy</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">HTML Academy</p>
+            <p class="copright__logo">Логотип HTML Academy</p>
           </a>
         </div>
       </div>
