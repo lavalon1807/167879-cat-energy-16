@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
+
   <body>
     <header class="page-header">
-      <a class="page-header__logo" src="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Logo Cat Energy">
-      </a>
-      <a class="page-header__logo" src="index.html">
-        <img class="page-header__logo-name" src="img/logo-mobile-header.svg" width="320" height="65" alt="name Cate Energy">
-      </a>
+      <div class="page-header__container">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="190" height="38" alt="Logo Cat Energy">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -46,31 +47,40 @@
         </div>
 
         <div class="page-footer__container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554800721123!5m2!1sru!2sru" width="1345" height="645" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554800721123!5m2!1sru!2sru" width="320" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
           <section class="page-footer__map">
             <img class="map__marker" src="img/marker-map" width="55" height="53" alt="Маркер на карту">
           </section>
+          <img class="page-footer__logo" src="../img/logo-footer.svg" width="128" height="24" alt="подвальный логотип">
         </div>
 
         <div class="page-footer__social social">
-          <img class="map__logo-name" src="img/footer-logo.svg" width="128" height="24" alt="Логотип подвала">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="http://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link social__link--vkontakte" href="http://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+                <img src="../img/icon-vk-mobile.svg" width="22" height="12" alt="Мы в контакте">
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="http://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              <a class="social__link social__link--instagram" href="http://www.instagram.com/htmlacademy">
+                <span class="visually-hidden">Мы в Инстаграме</span>
+                <img src="../img/icon-insta-mobile.svg" width="16" height="16" alt="Мы в Инстаграме">
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="http://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="http://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+                <img src="../img/icon-fb-mobile.svg" width="10" height="19" alt="Мы в Фейсбуке">
+              </a>
             </li>
           </ul>
         </div>
 
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__link--htmllogo">
-            <span class="visually-hidden">Логотип HTML Academy</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">HTML Academy</p>
+            <img class="copyright__logo" src="../img/htmlacademy.svg" width="27" height="34" alt="htmlacademy">
           </a>
         </div>
       </div>
