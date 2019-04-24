@@ -2,3 +2,27 @@
   padding-top: 20px;
   border: 1px solid #eeeeee;
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    margin-left: 50px;
+  }
+
+  .site-list__item {
+    padding: 0;
+    margin-left: 20px;
+    vertical-align: middle;
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    margin: 0;
+  }
+
+  .site-list__item {
+    margin-left: 40px;
+  }
+}

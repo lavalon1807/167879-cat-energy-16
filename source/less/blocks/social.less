@@ -16,3 +16,45 @@
 .social__link {
   opacity: 0.3;
 }
+
+@media (min-width: @tablet-width) {
+  .social__item:first-child {
+    margin: 0;
+    padding: 0;
+  }
+
+  .social__item {
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-top: 30px;
+  }
+
+  .social {
+    margin-top: 43px;
+  }
+
+  .social__link--vkontakte img {
+    margin-top: 30px;
+    width: 30px;
+    height: 20px;
+  }
+
+  .social__link--instagram img {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__link--facebook img {
+    width: 14px;
+    height: 28px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social {
+    padding: 0 110px;
+    margin: 0;
+  }
+}
