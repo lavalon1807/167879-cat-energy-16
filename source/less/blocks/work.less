@@ -15,3 +15,114 @@
 .work__item {
   padding-bottom: 34px;
 }
+
+@media (min-width: @tablet-width) {
+  .work__title {
+    font-family: "Oswald", serif;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
+
+  .work__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .work__item {
+    position: relative;
+    font-family: "Arial", serif;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 110px;
+    padding-bottom: 50px;
+    margin-bottom: 80px;
+    width: 240px;
+  }
+
+  .work__item:nth-child(2n+1) {
+    margin-right: 150px;
+    width: 230px;
+  }
+
+  .work__item:first-child::after {
+    content: "1";
+    font-family: "Oswald", serif;
+    font-size: 281px;
+    position: absolute;
+    top: 90px;
+    left: 120px;
+    color: #444444;
+    opacity: 0.1;
+  }
+
+  .work__item:nth-child(2)::after {
+    content: "2";
+    font-family: "Oswald", serif;
+    font-size: 281px;
+    position: absolute;
+    top: 90px;
+    left: 120px;
+    color: #444444;
+    opacity: 0.1;
+  }
+
+  .work__item:nth-child(3)::after {
+    content: "3";
+    font-family: "Oswald", serif;
+    font-size: 281px;
+    position: absolute;
+    top: 90px;
+    left: 120px;
+    color: #444444;
+    opacity: 0.1;
+  }
+
+  .work__item:nth-child(4)::after {
+    content: "4";
+    font-family: "Oswald", serif;
+    font-size: 281px;
+    position: absolute;
+    top: 90px;
+    left: 120px;
+    color: #444444;
+    opacity: 0.1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .work__title {
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .work__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  .work__item {
+    display: flex;
+    margin: 0;
+  }
+
+  .work__item:nth-child(2n+1) {
+    margin-right: 0;
+  }
+}

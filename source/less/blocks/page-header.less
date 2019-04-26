@@ -2,3 +2,52 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    width: 720px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+
+  .page-header__nav {
+    display: flex;
+    padding-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header {
+    min-width: 708px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+    padding-top: 60px;
+    margin-bottom: 30px;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+  }
+
+  .page-header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    padding-bottom: 0;
+  }
+
+  .page-header__wrapper--picture {
+    background-image: none;
+  }
+}
