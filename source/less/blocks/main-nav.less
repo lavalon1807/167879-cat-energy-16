@@ -70,8 +70,14 @@
 @media (min-width: @tablet-width) {
   .main-nav {
     width: 460px;
+    margin: 0;
+    padding: 0;
     margin-top: 18px;
-    margin-left: 83px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
   }
 
   .main-nav__toggle {
