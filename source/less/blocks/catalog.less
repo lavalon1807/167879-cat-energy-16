@@ -1,54 +1,61 @@
 .catalog__item {
+  padding-top: 22px;
   border: 1px solid #ededed;
-  padding-top: 25px;
   border-bottom: none;
+  width: 100%;
+}
+
+.catalog__wrapper--mobile {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 280px;
 }
 
 .catalog__item--chiken-small {
   background-image: url("../img/chicken-small-mobile@1x.jpg");
-  background-position: 0 -15px;
+  background-position: 18px -1px;
   background-repeat: no-repeat;
   background-size: 45%;
 }
 
 .catalog__item--chiken-big {
   background-image: url("../img/chicken-big-mobile@1x.jpg");
-  background-position: 0 -25px;
+  background-position: 19px 0;
   background-repeat: no-repeat;
-  background-size: 48%;
+  background-size: 44%;
 }
 
 .catalog__item--fish-small {
   background-image: url("../img/fish-small-mobile@1x.jpg");
-  background-position: 0 -15px;
+  background-position: 18px -1px;
   background-repeat: no-repeat;
   background-size: 45%;
 }
 
 .catalog__item--fish-big {
   background-image: url("../img/fish-big-mobile@1x.jpg");
-  background-position: 0 -25px;
+  background-position: 19px 0;
   background-repeat: no-repeat;
-  background-size: 48%;
+  background-size: 44%;
 }
 
 .catalog__item--buckwheat-small {
   background-image: url("../img/buckwheat-small-mobile@1x.jpg");
-  background-position: 0 -15px;
+  background-position: 18px -1px;
   background-repeat: no-repeat;
   background-size: 45%;
 }
 
 .catalog__item--buckwheat-big {
   background-image: url("../img/buckwheat-big-mobile@1x.jpg");
-  background-position: 0 -25px;
+  background-position: 19px 0;
   background-repeat: no-repeat;
-  background-size: 48%;
+  background-size: 44%;
 }
 
 .catalog__item--rice-small {
   background-image: url("../img/rice-small-mobile@1x.jpg");
-  background-position: 0 -15px;
+  background-position: 18px -1px;
   background-repeat: no-repeat;
   background-size: 45%;
 }
@@ -57,46 +64,51 @@
   display: block;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 16px;
+  font-family: "Oswald", serif;
+  font-size: 14px;
   line-height: 20px;
   color: #111111;
-  width: 140px;
+  width: 100px;
   padding-left: 140px;
+  padding-bottom: 12px;
 }
 
 .catalog__option {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  font-size: 12px;
+  line-height: 16px;
   padding-left: 140px;
   width: 145px;
-  padding-bottom: 26px;
-}
-
-.catalog__letter {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 3px;
+  padding-bottom: 19px;
 }
 
 .catalog__part {
-  padding-left: 55px;
+  display: flex;
+  justify-content: space-between;
+  width: 210px;
 }
 
-.catalog__volume,
-.catalog__price {
-  width: 50px;
+.catalog__part p {
+  padding: 0;
+  margin: 0;
+  margin-right: 4px;
+  margin-bottom: 1px;
 }
 
 .catalog__button {
-  margin-bottom: 26px;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 280px;
 }
 
 .catalog__stats {
   position: relative;
-  border: 1px solid #eeeeee;
   width: 318px;
-  padding-top: 83px;
+  padding-top: 57px;
+  border-bottom: 1px solid #ededed;
 }
 
 .catalog__stats::before {
@@ -104,19 +116,19 @@
   position: absolute;
   background-image: url("../img/icon-plus-mobile.svg");
   background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
-  top: 20px;
+  width: 30px;
+  height: 30px;
+  top: 5px;
   left: 145px;
   opacity: 0.2;
 }
 
 .catalog__stats b {
   text-transform: uppercase;
-  font-family: "Osward", serif;
-  font-size: 16px;
+  font-family: "Oswald", serif;
+  font-size: 14px;
   line-height: 20px;
-  padding-left: 30px;
+  padding-left: 57px;
   color: #111111;
 }
 
@@ -126,7 +138,9 @@
   line-height: 16px;
   color: #444444;
   text-align: center;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
+  margin: 0;
+  margin-top: 9px;
 }
 
 @media (min-width: @tablet-width) {
@@ -140,8 +154,10 @@
     position: relative;
     width: 324px;
     background-color: #f2f2f2;
-    margin-top: 143px;
-    padding-bottom: 10px;
+    margin-top: 140px;
+    margin-bottom: 3px;
+    padding-bottom: 14px;
+    border: none;
   }
 
   .catalog__item--chiken-small {
@@ -251,22 +267,23 @@
 
   .catalog__button {
     width: 250px;
-    margin-left: 38px;
-    padding-bottom: 7px;
+    margin-left: 15px;
+    padding-bottom: 11px;
   }
 
-  .catalog__volume {
-    width: 50px;
+  .catalog__item--more {
+    background-color: #ffffff;
+    border: 1px solid #f2f2f2;
   }
 
   .catalog__option {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    padding-left: 38px;
     margin-bottom: 25px;
-    width: 250px;
+    width: 350px;
   }
 
   .catalog__letter {
@@ -278,7 +295,15 @@
   }
 
   .catalog__part {
-    padding-left: 160px;
+    display: flex;
+    font-family: "Arial", serif;
+    font-size: 16px;
+    line-height: 16px;
+    border-bottom: 1px solid #cdcdcd;
+    margin-left: 15px;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+    width: 255px;
   }
 
   .catalog__link {
@@ -288,27 +313,72 @@
     text-align: center;
     margin: 0;
     padding: 0;
-    padding-left: 95px;
-    padding-bottom: 30px;
-    padding-top: 130px;
+    padding-left: 66px;
+    padding-bottom: 27px;
+    padding-top: 139px;
+    width: 150px;
+  }
+
+  .catalog__stats::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-plus.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  top: 30px;
+  left: 135px;
+  opacity: 0.2;
+  }
+
+  .catalog__stats {
+    border: none;
+  }
+
+  .catalog__stats b {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+    width: 140px;
+    margin-top: 81px;
+    margin-bottom: 26px;
+    padding-left: 93px;
+  }
+
+  .catalog__stats p {
+    font-size: 16px;
+    line-height: 18px;
+    width: 180px;
+    margin-bottom: 67px;
+    margin-left: 73px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .catalog__item {
-    width: 243px;
-  }
-
-  .catalog__button {
-    width: 168px;
+    width: 246px;
+    padding-bottom: 17px;
   }
 
   .catalog__part {
-    padding-left: 90px;
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 19px;
+    width: 171px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .catalog__button {
+    width: 170px;
+    margin-left: 19px;
   }
 
   .catalog__link {
-    padding-left: 55px;
+    padding-left: 29px;
+    padding-top: 142px;
+    padding-bottom: 24px;
   }
 
   .catalog__item--chiken-small {
@@ -322,7 +392,7 @@
     background-repeat: no-repeat;
     width: 240px;
     height: 200px;
-    top: -50px;
+    top: -47px;
     left: 0;
   }
 
@@ -417,12 +487,12 @@
   }
 
   .catalog__stats {
-    width: 243px;
-    border: none;
+    width: 245px;
   }
 
   .catalog__item--more {
     background-color: #ffffff;
+    width: 243px;
   }
 
   .catalog__stats::before {
@@ -433,7 +503,7 @@
     width: 60px;
     height: 60px;
     top: -110px;
-    left: 55px;
+    left: 59px;
     opacity: 0.2;
   }
 }
