@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -12,7 +13,11 @@
         <div class="page-header__nav">
           <div class="page-header__container">
             <a class="page-header__logo">
-              <img class="page-header__logo-image" src="img/logo-mobile.svg" width="190" height="38" alt="Logo Cat Energy">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="../img/logo-tablet.svg">
+                <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-mobile.svg" width="190" height="38" alt="Logo Cat Energy">
+              </picture>
             </a>
           </div>
           <nav class="main-nav main-nav--closed main-nav--nojs">
