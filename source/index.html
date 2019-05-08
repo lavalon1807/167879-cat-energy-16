@@ -4,10 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
 
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__nav">
@@ -118,39 +122,35 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="http://vk.com/htmlacademy">
-                <picture>
-                  <source media="(min-width: 1300px)" srcset="img/icon-vk.svg">
-                  <source media="(min-width: 768px)" srcset="img/icon-vk.svg">
-                  <span class="visually-hidden">Мы в Вконтакте</span>
-                  <img src="img/icon-vk-mobile.svg" width="22" height="12" alt="Мы в контакте">
-                </picture>
+                <span class="visually-hidden">Мы в Вконтакте</span>
+                <svg width="22" height="12">
+                  <use xlink:href="#icon-vk-mobile"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--instagram" href="http://www.instagram.com/htmlacademy">
-                <picture>
-                  <source media="(min-width: 1300px)" srcset="img/icon-insta.svg">
-                  <source media="(min-width: 768px)" srcset="img/icon-insta.svg">
-                  <span class="visually-hidden">Мы в Инстаграме</span>
-                  <img src="img/icon-insta-mobile.svg" width="16" height="16" alt="Мы в Инстаграме">
-                </picture>
+                <span class="visually-hidden">Мы в Инстаграме</span>
+                <svg width="16" height="16">
+                  <use xlink:href="#icon-insta-mobile"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="http://www.facebook.com/htmlacademy">
-                <picture>
-                  <source media="(min-width: 1300px)" srcset="img/icon-fb.svg">
-                  <source media="(min-width: 768px)" srcset="img/icon-fb.svg">
-                  <span class="visually-hidden">Мы в Фейсбуке</span>
-                  <img src="img/fb-mobile.svg" width="10" height="19" alt="Мы в Фейсбуке">
-                </picture>
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+                <svg width="10" height="19">
+                  <use xlink:href="#icon-fb-mobile"></use>
+                </svg>
               </a>
             </li>
           </ul>
           <div class="page-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <p class="copyright__text">HTML Academy</p>
-              <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy">
+              <p>HTML Academy</p>
+              <svg width="30" height="37">
+                <use xlink:href="#icon-htmlacademy"></use>
+              </svg>
             </a>
           </div>
         </div>
