@@ -106,16 +106,16 @@
   transition: background-color 0.2s;
 }
 
-#button-1:checked ~ .example__slider label[for="button-1"],
-#button-2:checked ~ .example__slider label[for="button-2"] {
+.example__radio-1:checked ~ .example__slider label[for="button-1"],
+.example__radio-2:checked ~ .example__slider label[for="button-2"] {
   background-color: #68b738;
 }
 
-#button-1:checked ~ .example__list .example__picture {
+.example__radio-1:checked ~ .example__list .example__picture {
   transform: translate(0);
 }
 
-#button-2:checked ~ .example__list .example__picture {
+.example__radio-2:checked ~ .example__list .example__picture {
   transform: translate(-320px);
 }
 
