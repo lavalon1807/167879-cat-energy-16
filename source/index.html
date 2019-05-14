@@ -43,14 +43,18 @@
             </div>
           </nav>
         </div>
-        <section class="programm">
-          <div class="programm__list">
-            <h2 class="programm__info">Функциональное питание для котов</h2>
-            <p class="programm__present">Занялся собой? Займись котом!</p>
+      </div>
+      <section class="programm">
+        <div class="programm__soft">
+          <div class="programm__basis">
+            <div class="programm__list">
+              <h2 class="programm__info">Функциональное питание для котов</h2>
+              <p class="programm__present">Занялся собой? Займись котом!</p>
+            </div>
           </div>
           <a class="programm__button button" href="programm-form.html">Подобрать программу</a>
-        </section>
-      </div>
+        </div>
+      </section>
     </header>
 
     <main class="page-main">
@@ -81,40 +85,60 @@
             <li class="work__item work__item--clock">Уже через месяц наслаждайтесь изменениями к <span>лучшему</span> вашего питомца!</li>
           </ul>
         </section>
+      </div>
 
-        <section class="example">
-          <div class="example__wrapper">
-            <h3 class="example__title">Живой пример</h3>
-            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <div class="example__data">
-              <div class="example__list">
-                <p class="example-count">
-                  <span class="count__result">5 кг</span> снижение веса
-                </p>
-                <p class="example-count">
-                  <span class="count__result">60 дней</span> затрачено времени
-                </p>
+      <section class="example">
+        <div class="example__wrapper">
+          <h3 class="example__title">Живой пример</h3>
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="example__data">
+            <div class="example__list">
+              <div class="example__item count">
+                <span class="count__result count__result--weight">5 кг</span>
+                <span class="count__result count__result--time">60 дней</span>
               </div>
-              <p class="example__lost">Затраты на питание: 15 000 руб.</p>
-              <div class="example__total">
-                <button class="example__button button" type="button">Было</button>
-                <button class="example__button button" type="button">Стало</button>
+              <div class="example__item count">
+                <span class="count__description count__description--weight">снижение веса</span>
+                <span class="count__description count__description--time">затрачено времени</span>
+              </div>
+            </div>
+            <p class="example__lost">Затраты на питание: 15 000 руб.</p>
+            <div class="example__total">
+              <input type="radio" id="button-1" name="toggle" checked>
+              <input type="radio" id="button-2" name="toggle">
+              <div class="example__slider">
+                <label for="button-1"></label>
+                <label for="button-2"></label>
+              </div>
+              <div class="example__list">
+                <div class="example__picture">
+                  <img src="img/before-mobile@1x.png" alt="cat-before">
+                  <img class="example__before" src="img/after-mobile@1x.png" alt="cat-after">
+                </div>
+              </div>
+              <div class="example__direct">
+                <label for="button-1">
+                  <p class="example__back">Было</p>
+                </label>
+                <label for="button-2">
+                  <p class="example__next">Стало</p>
+                </label>
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__contacts contacts">
-          <b class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</b>
+          <b class="contacts__slogan">Приглашаем<br> к сотрудничеству дилеров!</b>
           <p class="contacts__place">ул. Большая Конюшенная, д. 19/8 <span class="adress__city">Санкт-Петербург</span></p>
         </div>
-
         <div class="page-footer__container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554800721123!5m2!1sru!2sru" width="320" height="360" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.6020057715843!2d30.322886466226425!3d59.93874604080651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1557766672551!5m2!1sru!2sru" width="320" height="362" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <img class="herabora" src="img/map-pin.png" width="60" height="55" alt="herabora">
         </div>
 
         <div class="page-footer__social social">
@@ -148,8 +172,9 @@
           <div class="page-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <p>HTML Academy</p>
-              <svg width="30" height="37">
-                <use xlink:href="#icon-htmlacademy"></use>
+              <svg width="40" height="47">
+                <use xlink:href="#icon-htmlacademy">
+                </use>
               </svg>
             </a>
           </div>
