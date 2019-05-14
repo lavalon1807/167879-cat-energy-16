@@ -1,0 +1,141 @@
+.example {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #f2f2f2;
+  padding-bottom: 19px;
+  margin-bottom: 28px;
+  width: 320px;
+}
+
+.example__wrapper {
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 280px;
+}
+
+.example__title {
+  font-family: "Oswald", serif;
+  font-size: 34px;
+  line-height: 60px;
+  color: #111111;
+  margin: 0;
+  margin-top: 20px;
+  padding-bottom: 9px;
+  padding-top: 18px;
+}
+
+.example__description {
+  font-family: "Arial", serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin-bottom: 24px;
+}
+
+.example__lost {
+  font-family: "Oswald", serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__total {
+  position: relative;
+}
+
+.example__item {
+  margin-bottom: 20px;
+}
+
+.example__total input[type="radio"] {
+  display: none;
+}
+
+.example__list {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.example__picture {
+  width: 300%;
+  transition: transform 0.8s ease;
+}
+
+.example__picture img {
+  float: left;
+  margin: 0;
+  padding: 0;
+  margin-left: -20px;
+  padding-top: 20px;
+  width: 320px;
+  height: 240px;
+}
+
+.example__before {
+  position: absolute;
+  top: 0;
+  left: 320px;
+  width: 320px;
+  height: 240px;
+}
+
+.example__slider {
+  position: absolute;
+  top: 294px;
+  left: 98px;
+  width: 85px;
+  height: 12px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 50px;
+}
+
+.example__slider label {
+  display: inline-block;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  width: 35px;
+  height: 3px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.example__radio-1:checked ~ .example__slider label[for="button-1"],
+.example__radio-2:checked ~ .example__slider label[for="button-2"] {
+  background-color: #68b738;
+}
+
+.example__radio-1:checked ~ .example__list .example__picture {
+  transform: translate(0);
+}
+
+.example__radio-2:checked ~ .example__list .example__picture {
+  transform: translate(-320px);
+}
+
+.example__direct {
+  display: flex;
+  margin-top: 16px;
+}
+
+.example__back,
+.example__next {
+  font-family: "Oswald", serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 55px;
+  margin-left: 42px;
+  cursor: pointer;
+}
+
+.example__next {
+  margin-left: 103px;
+}
