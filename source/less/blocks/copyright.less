@@ -1,17 +1,16 @@
-.copyright {
-  position: relative;
-}
-
 .copyright__link {
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
+  margin-left: 10px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .copyright__link svg {
-  position: absolute;
-  top: -4px;
-  left: 246px;
+  padding-top: 4px;
+  fill: #666666;
+  margin-right: 13px;
 }
 
 .copyright__text {
@@ -21,6 +20,14 @@
   color: #444444;
 }
 
+.copyright__link:hover svg {
+  fill: #68b738;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .copyright__logo {
     margin-left: 22px;
@@ -28,6 +35,34 @@
   }
 
   .copyright__link {
-    margin-top: 10px;
+    margin-top: 21px;
+    margin-right: 23px;
+  }
+
+  .copyright__link svg {
+    margin: 0;
+    padding-left: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  .copyright__link svg {
+    position: absolute;
+    top: 31px;
+    right: -7px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .copyright__link {
+    margin: 0;
+    margin-top: 27px;
+    width: 163px;
   }
 }
