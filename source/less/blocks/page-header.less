@@ -1,35 +1,71 @@
-.page-header__wrapper {
+.page-header__wrapper--picture {
+  width: 320px;
   margin: 0 auto;
+}
+
+.page-header__wrapper {
   width: 300px;
-  padding-left: 20px;
+  padding: 0 10px;
   padding-top: 12px;
 }
 
 .page-header__container {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 
-.page-header__logo img {
-  width: 190px;
-  height: 38px;
+.page-header__logo:hover {
+  opacity: 0.7;
+}
+
+.page-header__logo:active {
+  opacity: 0.4;
+}
+
+.page-header__icon-name {
+  position: absolute;
+  top: 11px;
+  left: 48px;
+  width: 101px;
+  height: 20px;
+  margin-left: 52px;
+}
+
+.page-header__icon-min {
+  margin-left: 9px;
+  width: 35px;
+  height: 36px;
 }
 
 @media (min-width: @tablet-width) {
+  .page-header__wrapper--picture {
+    width: 768px;
+    margin: 0 auto;
+  }
+
   .page-header__wrapper {
     margin: 0 auto;
-    padding: 0 20px;
-    padding-top: 22px;
+    padding: 0 30px;
+    width: 708px;
+  }
+
+  .page-header__container {
+    margin-bottom: 2px;
   }
 
   .page-header__logo-image {
     display: none;
   }
 
+  .page-header__icon-name {
+    display: none;
+  }
+
   .page-header__logo {
     background-repeat: no-repeat;
     background-position: 0 0;
-    margin-left: 10px;
   }
 
   .page-header__logo img {
@@ -42,7 +78,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
+    margin-top: 24px;
   }
 
   .page-header__toggle {
@@ -51,42 +88,41 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-header {
+    background-image: url("../img/index-background-desktop@1x.webp");
+    background-position: 719px 0;
+    background-repeat: no-repeat;
+    background-size: 720px auto;
+    margin: 0 auto;
+    margin-bottom: 63px;
+    width: 1440px;
+  }
+
   .page-header__wrapper {
     width: 1220px;
     padding: 0 110px;
     margin: 0 auto;
     padding-top: 54px;
-    background-image: url("../img/index-background-desktop@1x.webp");
-    background-position: 100% 0;
-    background-repeat: no-repeat;
-    background-size: 720px auto;
+
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.webp");
     }
   }
 
-  .page-header__logo {
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
   .page-header__logo img {
     width: 202px;
     height: 63px;
     margin-top: -3px;
-    margin-left: -11px;
   }
 
   .page-header__nav {
     display: flex;
     justify-content: space-between;
-    width: 1220px;
-    padding-bottom: 0;
-    margin-bottom: 20px;
+    margin: 0;
   }
 
   .page-header__wrapper--picture {
-    background-image: none;
+    // background-image: none;
   }
 }

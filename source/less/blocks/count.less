@@ -4,7 +4,7 @@
   font-size: 24px;
   line-height: 24px;
   border: 1px solid #cdcdcd;
-  border-radius: 5px;
+  border-radius: 3px;
   text-align: center;
   width: 122px;
   margin-right: 27px;
@@ -36,4 +36,38 @@
 .count__description--time {
   top: 47px;
   left: 175px;
+}
+
+@media (min-width: @tablet-width) {
+  .count__result {
+    font-size: 30px;
+    line-height: 37px;
+    padding: 15px 19px 18px;
+    margin-right: 38px;
+  }
+
+  .count__description {
+    font-size: 14px;
+    line-height: 14px;
+    width: 125px;
+    margin-top: 16px;
+    margin-left: 8px;
+    background-color: #ffffff;
+  }
+
+  .count__description--weight {
+    width: 110px;
+  }
+
+  .count__description--time {
+    width: 130px;
+    margin-left: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .count__description--time,
+    .count__description--weight {
+      background-color: #f2f2f2;
+    }
+  }
 }

@@ -2,10 +2,10 @@
   font-family: "Oswald", serif;
   color: #ffffff;
   margin: 0 auto;
-  width: 320px;
+  min-width: 320px;
 }
 
-.programm__soft {
+.programm__wrapper {
   margin: 0;
   padding: 0;
   background-image: url("../img/index-background-mobile@1x.webp");
@@ -13,22 +13,12 @@
   background-repeat: no-repeat;
 }
 
-.programm__basis {
-  padding: 0 20px;
-}
-
 .programm__list {
   background-image: url("../img/index-can-mobile@1x.webp");
-  background-position: 0 166px;
+  background-position: 20px 166px;
   background-repeat: no-repeat;
   background-size: 280px auto;
   padding-bottom: 288px;
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image:
-      url("../img/index-can-mobile@2x.webp"),
-      url("../img/index-background-mobile@2x.webp");
-  }
 }
 
 .programm__info {
@@ -57,23 +47,27 @@
 @media (min-width: @tablet-width) {
   .programm {
     background-image: url("../img/index-can-tablet@1x.webp");
-    background-position: -8px 230px;
+    background-position: 30px 230px;
     background-repeat: no-repeat;
-    background-size: 709px auto;
-    padding-bottom: 35px;
-    margin-left: 18px;
+    background-size: 708px auto;
+    margin: 0 auto;
+    width: 768px;
+    padding-bottom: 14px;
+  }
 
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/index-can-tablet@2x.webp");
-    }
+  .programm__wrapper {
+    background-image: none;
+    width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
   }
 
   .programm__list {
     background-image: none;
     width: 580px;
     color: #000000;
-    margin-left: 80px;
-    padding-bottom: 10px;
+    margin-left: 87px;
+    padding-bottom: 11px;
   }
 
   .programm__info {
@@ -98,35 +92,40 @@
     line-height: 20px;
     margin-bottom: 495px;
     width: 247px;
-    margin-left: 80px;
+    margin-left: 87px;
     padding: 15px 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .programm {
-    margin: 0;
-    width: 1220px;
+    width: 1440px;
+    margin: 0 auto;
     background-image: url("../img/index-can-desktop@1x.webp");
-    background-position: 450px 0;
+    background-position: 560px 25px;
     background-repeat: no-repeat;
     background-size: 552px;
-    margin-bottom: 42px;
+    padding-bottom: 11px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/index-can-desktop@2x.webp");
     }
   }
 
+  .programm__wrapper {
+    width: 1220px;
+    padding: 0 110px;
+  }
+
   .programm__list {
     padding: 0;
     margin: 0;
     margin-left: 80px;
-    padding-top: 54px;
+    padding-top: 76px;
   }
 
   .programm__info {
-    font-size: 56px;
+    font-size: 55px;
     line-height: 60px;
     margin-bottom: 42px;
     width: 420px;
@@ -139,6 +138,8 @@
   }
 
   .programm__button {
+    width: 245px;
+    padding-bottom: 18px;
     margin-bottom: 190px;
     margin-left: 80px;
   }

@@ -1,3 +1,7 @@
+.sentence__list {
+  margin-top: 20px;
+}
+
 .sentence__item {
   position: relative;
   background-color: #f2f2f2;
@@ -73,12 +77,23 @@
     content: "";
     position: absolute;
     top: 230px;
-    right: 112px;
+    right: 115px;
     width: 50px;
     height: 10px;
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
+}
+
+.sentence__link:focus,
+.sentence__link:hover {
+  &::after {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+}
+
+.sentence__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {

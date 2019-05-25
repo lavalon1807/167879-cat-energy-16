@@ -1,10 +1,20 @@
-.page-main__wrapper {
-  width: 280px;
-  padding: 0 20px;
+.page-main {
+  width: 320px;
   margin: 0 auto;
 }
 
+.page-main__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 280px;
+}
+
 @media (min-width: @tablet-width) {
+  .page-main {
+    width: 768px;
+    margin: 0 auto;
+  }
+
   .page-main__wrapper {
     padding: 0 30px;
     margin: 0 auto;
@@ -12,7 +22,13 @@
   }
 }
 
+
 @media (min-width: @desktop-width) {
+  .page-main {
+    width: 1440px;
+    margin: 0 auto;
+  }
+
   .page-main__wrapper {
     width: 1220px;
     padding: 0 110px;
