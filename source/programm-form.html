@@ -12,7 +12,7 @@
       <include src="build/img/sprite.svg"></include>
     </div>
 
-    <header class="page-header">
+    <header class="pege-header">
       <div class="page-header__wrapper page-header__wrapper--picture">
         <div class="page-header__nav">
           <div class="page-header__container">
@@ -20,7 +20,8 @@
               <picture>
                 <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img src="img/logo-mobile.svg" width="190" height="38" alt="Logo Cat Energy">
+                <img class="page-header__icon-min" src="img/logo-mobile.png" width="60px" height="60px" alt="Logo Cat Energy">
+                <img class="page-header__icon-name" src="img/logo-mobile-header.png" width="101" height="20" alt="Logo Cat Energy">
               </picture>
             </a>
           </div>
@@ -47,22 +48,125 @@
     </header>
 
     <main class="page-form">
-      <h2 class="page-form__title">Подбор программы</h2>
-      <p class="page-form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form>
+      <div class="page-form__info">
+        <h2 class="page-form__title">Подбор программы</h2>
+        <p class="page-form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      </div>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="page-form__container">
+          <div class="page-form__wrapper">
+            <div class="page-form__data">
+              <p class="page-form__name">
+                <label for="name">Имя:*</label>
+                <input id="name" type="text" name="name" pattern="[А-Яа-я]{4,12}" placeholder="БАРСИК">
+              </p>
+              <p class="page-form__weight">
+                <label for="weight">Вес (кг):* </label>
+                <input id="weight" type="text" name="weight" pattern="[0-9]" placeholder="7">
+              </p>
+              <p class="page-form__age">
+                <label for="age">Возраст (лет):* </label>
+                <input id="age" type="text" name="age" pattern="[0-9]" placeholder="7">
+              </p>
+            </div>
+          </div>
 
+          <div class="page-form__direction direction">
+            <div class="direction__wrapper">
+              <div class="direction__item">
+                <input type="radio" name="answer" id="weight-down" checked>
+                <label for="weight-down">Похудение</label>
+              </div>
+              <div class="direction__item">
+                <input type="radio" name="answer" id="weight-up">
+                <label for="weight-up">Набор массы</label>
+              </div>
+              <div class="direction__item">
+                <input type="radio" name="answer" id="unknown">
+                <label for="unknown">Не знаю (нужен ваш совет)</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-form__user-contacts user-contacts">
+          <div class="user-contacts__wrapper">
+            <h3 class="user-contacts__title">Контактные данные (владельца кота)</h3>
+            <div class="user-contacts__data">
+              <div class="user-contacts__item">
+                <label for="username">E-mail:* </label>
+                <input class="user-contacts__mail" type="email" name="user name" id="username" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="KUKLACHEV@GMAIL.COM">
+                <svg  class="user-contacts__stroke" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 13"><path d="M15.6 11.6H1.4V5.8H0V13h17V5.8h-1.4v5.8zM0 0v2.3l8.5 7.1L17 2.3V0H0zm15.6 1.6L8.5 7.5 1.4 1.6v-.2h14.2v.2z"/></svg>
+              </div>
+              <div class="user-contacts__item">
+                <label for="userphone">Телефон:*</label>
+                <input class="user-contacts__phone" type="tel" name="user phone" id="userphone" pattern="(\+?\d[- .]*){7,13}" placeholder="8 (960) 900-60-90">
+                <svg class="user-contacts__stroke user-contacts__stroke--phone" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1c.2-.2.2-.6 0-.9l-3.1-3.1-.9.9 2.1 2zm-9.8 10v-6.2c0-.3-.3-.6-.6-.6H3.1c0 .7.6 1.2 1.2 1.2h2.5v5H3.1c-1 .1-1.8-.7-1.9-1.7v-14c0-1 .8-1.8 1.7-1.8h3.9v5H4.4c-.7 0-1.2.6-1.2 1.2h4.4c.3 0 .6-.3.6-.6V.6C8.1.3 7.8 0 7.5 0H3.1C1.5-.1.1 1.2 0 2.9v13.9c-.1 1.7 1.2 3.1 2.9 3.1h4.6c.3.1.6-.2.6-.5z"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-form__comment comments">
+          <div class="comments__about-us">
+            <h3 class="comments__title">Комментарий</h3>
+            <textarea rows="7" placeholder="Расcкажите обо всех повадках кота"></textarea>
+          </div>
+        </div>
+
+        <div class="page-form__additionally additionally">
+          <div class="additionally__wrapper">
+            <h3 class="additionally__title">Дополнительно</h3>
+            <div class="additionally__list">
+              <p class="additionally__item">
+                <input type="checkbox" name="sugar" id="sugar" checked>
+                <svg width="21" height="21">
+                  <use xlink:href="#icon-tick"></use>
+                </svg>
+                <label for="sugar">Сахарозаменитель</label>
+              </p>
+              <p class="additionally__item">
+                <input type="checkbox" name="drink" id="drink">
+                <svg width="21" height="21">
+                  <use xlink:href="#icon-tick"></use>
+                </svg>
+                <label for="drink">Питьевая вода</label>
+              </p>
+              <p class="additionally__item">
+                <input type="checkbox" name="milk" id="milk">
+                <svg width="21" height="21">
+                  <use xlink:href="#icon-tick"></use>
+                </svg>
+                <label for="milk">Молоко</label>
+              </p>
+              <p class="additionally__item">
+                <input type="checkbox" name="vitamins" id="vitamins">
+                <svg width="21" height="21">
+                  <use xlink:href="#icon-tick"></use>
+                </svg>
+                <label for="vitamins">Витамины</label>
+              </p>
+            </div>
+          </div>
+        <div>
+        <div class="button__wrapper">
+          <input class="page-form__button button" type="submit" value="Отправить заявку">
+
+        <p class="page-form__requirements">*&mdash; Обязательные поля</p>
+        </div>
       </form>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer__grey">
       <div class="page-footer__wrapper">
         <div class="page-footer__contacts contacts">
-          <b class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</b>
-          <p class="contacts__place">ул. Большая Конюшенная, д. 19/8 <span class="adress__city">Санкт-Петербург</span></p>
+          <b class="contacts__slogan">Приглашаем<br> к сотрудничеству дилеров!</b>
+          <p class="contacts__place">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
         </div>
 
         <div class="page-footer__container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554800721123!5m2!1sru!2sru" width="320" height="360" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.6020057715843!2d30.322886466226425!3d59.93874604080651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1557766672551!5m2!1sru!2sru" width="302" height="362" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <img class="page-footer__pin" src="img/map-pin.png" width="60" height="55" alt="herabora">
         </div>
 
         <div class="page-footer__social social">
@@ -96,7 +200,7 @@
           <div class="page-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <p>HTML Academy</p>
-              <svg width="30" height="37">
+              <svg width="40" height="47">
                 <use xlink:href="#icon-htmlacademy"></use>
               </svg>
             </a>

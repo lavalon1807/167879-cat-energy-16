@@ -160,7 +160,7 @@
     margin: 0 auto;
     width: 768px;
     padding-bottom: 53px;
-    margin-bottom: 28px;
+    margin-bottom: -5px;
   }
 
   .example__wrapper {
@@ -171,7 +171,7 @@
     font-weight: 300;
     font-size: 60px;
     line-height: 60px;
-    padding-top: 22px;
+    padding-top: 21px;
     margin-bottom: 55px;
   }
 
@@ -227,7 +227,7 @@
     background-color: #f2f2f2;
     width: 50%;
     height: 462px;
-    bottom: 0;
+    bottom: 5px;
     left: 0;
   }
 
@@ -236,7 +236,7 @@
     background-color: #e6e6e6;
     width: 50%;
     height: 462px;
-    bottom: 0;
+    bottom: 5px;
     right: 0;
   }
 
@@ -249,6 +249,26 @@
     justify-content: space-between;
   }
 
+  .example__radio-2:checked ~ .example__slider label[for="button-1"] {
+    background-color: #68b738;
+  }
+
+  .example__radio-2:checked ~ .example__slider label[for="button-2"] {
+    background-color: #ffffff;
+  }
+
+  .example__radio-1:hover ~ .example__slider label[for="button-2"],
+  .example__radio-2:hover ~ .example__slider label[for="button-2"] {
+    box-shadow: 0 5px 10px -4px;
+  }
+
+  .example__radio-1:active ~ .example__slider label[for="button-2"],
+  .example__radio-2:active ~ .example__slider label[for="button-2"] {
+    border: 2px solid #68b738;
+    width: 28px;
+    height: 28px;
+  }
+
   .example__next,
   .example__back {
     font-family: "Oswald", serif;
@@ -256,10 +276,13 @@
     font-size: 20px;
     line-height: 20px;
     margin-left: 70px;
+    border-bottom: 1px dashed #bebebe;
+    width: 50px;
+    padding-bottom: 5px;
   }
 
   .example__next {
-    margin-right: 65px;
+    margin-right: 70px;
   }
 
   .example__slider {
@@ -373,6 +396,6 @@
   }
 
   .example__next {
-    margin-left: 463px;
+    margin-left: 468px;
   }
 }

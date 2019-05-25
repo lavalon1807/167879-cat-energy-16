@@ -85,6 +85,17 @@
   }
 }
 
+.sentence__link:focus,
+.sentence__link:hover {
+  &::after {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+}
+
+.sentence__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .sentence__title {
     font-family: "Oswald", serif;
