@@ -20,8 +20,7 @@
               <picture>
                 <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img class="page-header__icon-min" src="img/logo-mobile.png" width="60px" height="60px" alt="Logo Cat Energy">
-                <img class="page-header__icon-name" src="img/logo-mobile-header.png" width="101" height="20" alt="Logo Cat Energy">
+                <img class="page-header__icon-min" src="img/logo-mobile.svg" width="188" height="37" alt="Logo Cat Energy">
               </picture>
             </a>
           </div>
@@ -166,7 +165,7 @@
 
         <div class="page-footer__container">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.6020057715843!2d30.322886466226425!3d59.93874604080651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1557766672551!5m2!1sru!2sru" width="302" height="362" frameborder="0" style="border:0" allowfullscreen></iframe>
-          <img class="page-footer__pin" src="img/map-pin.png" width="60" height="55" alt="herabora">
+          <img class="page-footer__pin" src="img/map-pin.png" width="60" height="55" alt="метка">
         </div>
 
         <div class="page-footer__social social">
@@ -209,21 +208,7 @@
       </div>
     </footer>
 
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
+    <script src="js/main-menu.js"></script>
 
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
   </body>
 </html>
