@@ -13,7 +13,7 @@
 .user-contacts__title {
   font-size: 22px;
   line-height: 24px;
-  font-family: "Oswald", "Arial", serif;
+  font-family: "Oswald", "Arial", sans-serif;
   margin-bottom: 32px;
 }
 
@@ -28,7 +28,7 @@
 
 .user-contacts__data {
   text-transform: uppercase;
-  font-family: "Oswald", "Arial", serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
 }
@@ -204,21 +204,18 @@
   }
 
   .user-contacts__data {
-    width: 1220px;
-    padding-left: 0;
     display: flex;
     flex-wrap: wrap;
-    margin-right: 20px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 1220px;
   }
 
   .user-contacts__data input {
     padding-right: 268px;
     margin-left: 16px;
     padding-left: 18px;
-  }
-
-  .user-contacts__item:last-child {
-    padding-left: 78px;
   }
 
   .user-contacts__item {
@@ -259,13 +256,13 @@
   .user-contacts__stroke--phone {
     position: absolute;
     top: 18px;
-    left: 610px;
+    left: 533px;
   }
 
   .user-contacts__item:active .user-contacts__stroke--phone {
     position: absolute;
     top: 18px;
-    left: 610px;
+    left: 533px;
     fill: #80c357;
   }
 }
