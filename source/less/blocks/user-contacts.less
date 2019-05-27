@@ -94,7 +94,7 @@
   }
 
   .user-contacts__wrapper {
-    padding: 0 30px;
+    padding: 0 28px;
     width: 708px;
   }
 
@@ -137,6 +137,8 @@
 
   .user-contacts__data input {
     padding-right: 328px;
+    margin-left: 19px;
+    padding-left: 17px;
   }
 
   .user-contacts__mail {
@@ -146,10 +148,11 @@
     padding-left: 21px;
   }
 
-  .user-contacts__phone {
+  .user-contacts__data .user-contacts__phone {
     background-position: 498px 17px;
     background-size: 19px;
-    padding-left: 21px;
+    padding-left: 20px;
+    margin-left: 11px;
   }
 
   .user-contacts__stroke {
@@ -168,12 +171,12 @@
 
 @media (min-width: @desktop-width) {
   .user-contacts {
-    width: 1440px;
+    width: 1300px;
     margin: 0 auto;
   }
 
   .user-contacts__wrapper {
-    padding: 0 110px;
+    padding: 0 40px;
     width: 1220px;
   }
 
@@ -182,7 +185,7 @@
     top: 20px;
     right: 0;
     position: absolute;
-    width: 773px;
+    width: 703px;
     border: 2px solid #68b738;
   }
 
@@ -191,28 +194,35 @@
     top: 20px;
     left: 0;
     position: absolute;
-    width: 66px;
+    width: 25px;
     border: 2px solid #68b738;
   }
 
   .user-contacts__title {
     padding-left: 0;
-    margin-bottom: 72px;
+    margin-bottom: 74px;
   }
 
   .user-contacts__data {
     width: 1220px;
     padding-left: 0;
     display: flex;
+    flex-wrap: wrap;
     margin-right: 20px;
   }
 
   .user-contacts__data input {
-    padding-right: 265px;
+    padding-right: 268px;
+    margin-left: 16px;
+    padding-left: 18px;
   }
 
   .user-contacts__item:last-child {
     padding-left: 78px;
+  }
+
+  .user-contacts__item {
+    width: 571px;
   }
 
   .user-contacts__mail {
@@ -226,6 +236,11 @@
   .user-contacts__phone {
     background-position: 433px 17px;
     background-size: 19px;
+  }
+
+  .user-contacts__item .user-contacts__phone {
+    margin-left: 9px;
+    padding-right: 266px;
   }
 
   .user-contacts__stroke {

@@ -67,6 +67,7 @@
 }
 
 .sentence__link {
+  position: relative;
   font-family: "Oswald", "Arial", serif;
   font-size: 16px;
   line-height: 16px;
@@ -76,8 +77,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 230px;
-    right: 115px;
+    top: 9px;
+    right: -58px;
     width: 50px;
     height: 10px;
     background-image: url("../img/icon-right-arrow-long.svg");
@@ -171,8 +172,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 293px;
-      left: 179px;
+      top: 9px;
+      left: 106%;
       width: 57px;
       height: 12px;
       background-image: url("../img/icon-right-arrow-long.svg");
@@ -185,6 +186,7 @@
   .sentence__list {
     display: flex;
     justify-content: space-between;
+    margin-top: 64px;
   }
 
   .sentence__item {
