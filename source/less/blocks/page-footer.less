@@ -1,7 +1,7 @@
 .page-footer {
-  position: relative;
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 .page-footer__grey {
@@ -9,18 +9,22 @@
   padding-top: 28px;
 }
 
+.page-footer__index-grey {
+  background-color: #f2f2f2;
+}
+
 .page-footer__contacts {
   display: flex;
-  margin-bottom: 27px;
   padding: 0 20px;
   width: 280px;
+  margin: 0 auto;
 }
 
 .page-footer__logo {
   padding-top: 37px;
   margin-bottom: 28px;
   margin-left: 37px;
-  padding-left: 50px;
+  padding-left: 39px;
 }
 
 .page-footer__container {
@@ -30,26 +34,32 @@
   position: relative;
   background-color: #f2f2f2;
   overflow: hidden;
-  width: 320px;
+  min-width: 320px;
+  max-width: 767px;
   height: 362px;
 }
 
 .page-footer__pin {
   position: absolute;
-  top: 136px;
-  left: 130px;
+  top: 38%;
+  left: 41%;
+}
+
+.page-footer__container iframe {
+  border: 0;
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer {
-    margin: 0 auto;
-    width: 768px;
     padding: 0;
+    margin: 0;
   }
 
   .page-footer__contacts {
+    margin: 0 auto;
     padding: 0 30px;
-    width: 708px;
+    min-width: 708px;
   }
 
   .page-footer__container {
@@ -58,21 +68,20 @@
     background-repeat: no-repeat;
     position: relative;
     background-color: #f2f2f2;
-    margin: 0 auto;
     overflow: hidden;
-    width: 768px;
+    min-width: 100%;
     height: 400px;
   }
 
   .page-footer__container iframe {
-    width: 768px;
+    width: 100%;
     height: 400px;
   }
 
   .page-footer__pin {
     position: absolute;
-    top: 146px;
-    left: 321px;
+    top: 36%;
+    left: 42%;
     width: 125px;
     height: 106px;
   }
@@ -84,7 +93,7 @@
 
   .page-footer__logo {
     margin: 0;
-    padding-left: 23px;
+    padding-left: 2px;
   }
 }
 
@@ -92,13 +101,16 @@
   .page-footer {
     background-color: #f2f2f2;
     position: relative;
-    margin: 0 auto;
-    width: 1440px;
+  }
+
+  .page-footer__social {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
   }
 
   .page-footer__container {
     top: 0;
-    left: -110px;
     background-image: url("../img/bg-map-desktop@1x.png");
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -106,34 +118,30 @@
     background-color: #f2f2f2;
     margin: 0 auto;
     overflow: hidden;
-    width: 1440px;
+    width: 100%;
     height: 400px;
+    margin-bottom: 22px;
   }
 
   .page-footer__container iframe {
-    width: 1440px;
+    width: 100%;
     height: 400px;
   }
 
   .page-footer__pin {
-    left: 998px;
-    top: 151px;
-  }
-
-  .page-footer__wrapper {
-    margin: 0 auto;
-    padding: 0 110px;
-    width: 1220px;
+    left: 68%;
+    top: 38%;
   }
 
   .page-footer__contacts {
     background-color: #ffffff;
-    width: 570px;
+    min-width: 570px;
     height: 200px;
     position: absolute;
-    top: 96px;
-    left: 111px;
+    top: 18%;
+    left: 9%;
     z-index: 1;
+    margin: 0 auto;
   }
 
   .page-footer__logo {
