@@ -288,6 +288,7 @@ th {
   line-height: 20px;
   padding-left: 57px;
   color: #111111;
+  overflow: hidden;
 }
 .catalog__stats p {
   font-family: "Arial", serif;
