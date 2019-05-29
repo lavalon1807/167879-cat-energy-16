@@ -1,3 +1,7 @@
+.sentence__list {
+  margin-top: 20px;
+}
+
 .sentence__item {
   position: relative;
   background-color: #f2f2f2;
@@ -6,7 +10,7 @@
 }
 
 .sentence__title {
-  font-family: "Oswald", serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 22px;
   line-height: 34px;
   color: #111111;
@@ -63,7 +67,8 @@
 }
 
 .sentence__link {
-  font-family: "Oswald", serif;
+  position: relative;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -72,8 +77,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 230px;
-    right: 112px;
+    top: 9px;
+    right: -58px;
     width: 50px;
     height: 10px;
     background-image: url("../img/icon-right-arrow-long.svg");
@@ -81,9 +86,20 @@
   }
 }
 
+.sentence__link:focus,
+.sentence__link:hover {
+  &::after {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+}
+
+.sentence__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .sentence__title {
-    font-family: "Oswald", serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 35px;
     line-height: 37px;
     margin: 0;
@@ -148,7 +164,7 @@
   }
 
   .sentence__link {
-    font-family: "Oswald", serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
@@ -156,8 +172,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 293px;
-      left: 179px;
+      top: 9px;
+      left: 119%;
       width: 57px;
       height: 12px;
       background-image: url("../img/icon-right-arrow-long.svg");
@@ -170,6 +186,7 @@
   .sentence__list {
     display: flex;
     justify-content: space-between;
+    margin-top: 64px;
   }
 
   .sentence__item {

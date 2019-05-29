@@ -1,5 +1,11 @@
+.work__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .work__title {
-  font-family: "Oswald", serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 34px;
   line-height: 60px;
   margin-top: 20px;
@@ -8,7 +14,8 @@
 
 .work__list {
   position: relative;
-  font-family: "Arial", serif;
+  font-family: "Arial", sans-serif;
+  overflow: hidden;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
@@ -81,15 +88,25 @@
 }
 
 @media (min-width: @tablet-width) {
+  .work {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .work__wrapper {
+    padding: 0 30px;
+    margin: 0 auto;
+    width: 708px;
+  }
+
   .work__title {
-    font-family: "Oswald", serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
     margin: 0;
     padding: 0;
-    padding-top: 13px;
-    padding-bottom: 70px;
+    padding-top: 16px;
+    padding-bottom: 68px;
   }
 
   .work__list {
@@ -102,13 +119,14 @@
 
   .work__item {
     position: relative;
-    font-family: "Arial", serif;
+    overflow: hidden;
+    font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 24px;
     padding: 0;
     padding-top: 113px;
     padding-bottom: 50px;
-    margin-bottom: 82px;
+    margin-bottom: 55px;
     width: 239px;
   }
 
@@ -117,13 +135,17 @@
   }
 
   .work__item:nth-child(2n+1) {
-    margin-right: 155px;
-    width: 230px;
+    margin-right: 146px;
+    width: 240px;
+  }
+
+  .work__item:nth-child(1n+3) {
+    margin-top: 27px;
   }
 
   .work__item:first-child::after {
     content: "1";
-    font-family: "Oswald", serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 281px;
     position: absolute;
     top: 90px;
@@ -134,7 +156,7 @@
 
   .work__item:nth-child(2)::after {
     content: "2";
-    font-family: "Oswald", serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 281px;
     position: absolute;
     top: 90px;
@@ -145,10 +167,10 @@
 
   .work__item:nth-child(3)::after {
     content: "3";
-    font-family: "Oswald", serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 281px;
     position: absolute;
-    top: 88px;
+    top: 92px;
     left: 110px;
     color: #444444;
     opacity: 0.1;
@@ -156,7 +178,7 @@
 
   .work__item:nth-child(4)::after {
     content: "4";
-    font-family: "Oswald", serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 281px;
     position: absolute;
     top: 88px;
@@ -242,12 +264,21 @@
   .work {
     display: flex;
     flex-wrap: wrap;
+    border: none;
+    margin-top: 35px;
+    margin-bottom: 22px;
+  }
+
+  .work__wrapper {
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 1220px;
   }
 
   .work__title {
     margin: 0;
     padding: 0;
-    padding-top: 70px;
+    padding-top: 35px;
     padding-bottom: 70px;
   }
 
@@ -264,8 +295,16 @@
     padding-right: 5px;
   }
 
+  .work__item:nth-child(n+3) {
+    margin: 0;
+  }
+
   .work__item:nth-child(2n+1) {
-    margin-right: 6px;
+    margin-right: 0;
+  }
+
+  .work__item:nth-child(4)::after {
+    top: 90px;
   }
 
   .work__item--clock::before {
