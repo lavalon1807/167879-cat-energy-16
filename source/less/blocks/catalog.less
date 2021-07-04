@@ -1,0 +1,299 @@
+.catalog__item {
+  border: 1px solid #ededed;
+  border-bottom: none;
+}
+
+.catalog__wrapper--mobile {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 19px;
+  width: 280px;
+}
+
+.catalog__wrapper--mobile picture {
+  width: 140px;
+  height: 144px;
+}
+
+.catalog__link {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #111111;
+  width: 80px;
+  margin-bottom: 13px;
+}
+
+.catalog__option {
+  margin-top: 21px;
+  font-size: 12px;
+  line-height: 16px;
+  width: 140px;
+}
+
+.catalog__part {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+}
+
+.catalog__part p {
+  padding: 0;
+  margin: 0;
+}
+
+.catalog__button {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 280px;
+  margin-bottom: 24px;
+}
+
+.catalog__stats {
+  position: relative;
+  width: 318px;
+  padding-top: 57px;
+  margin-top: 22px;
+  border-bottom: 1px solid #ededed;
+}
+
+.catalog__stats::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-plus-mobile.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 5px;
+  left: 145px;
+  opacity: 0.2;
+}
+
+.catalog__stats b {
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 57px;
+  color: #111111;
+}
+
+.catalog__stats p {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0;
+  margin-top: 9px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    position: relative;
+    width: 324px;
+    background-color: #f2f2f2;
+    margin-top: 140px;
+    margin-bottom: 3px;
+    padding-bottom: 14px;
+    border: none;
+  }
+
+  .catalog__item--chiken-small img,
+  .catalog__item--fish-small img,
+  .catalog__item--buckwheat-small img,
+  .catalog__item--rice-small img {
+    position: absolute;
+    top: -49px;
+    left: 0;
+    width: 325px;
+    height: auto;
+  }
+
+  .catalog__item--chiken-big img,
+  .catalog__item--fish-big img,
+  .catalog__item--buckwheat-big img {
+    position: absolute;
+    top: -85px;
+    left: 0;
+    width: 325px;
+    height: auto;
+  }
+
+  .catalog__button {
+    width: 250px;
+    margin-left: 15px;
+    padding-bottom: 11px;
+  }
+
+  .catalog__item--more {
+    background-color: #ffffff;
+    border: 1px solid #f2f2f2;
+  }
+
+  .catalog__option {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+    width: 350px;
+  }
+
+  .catalog__letter {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .catalog__part {
+    display: flex;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    border-bottom: 1px solid #cdcdcd;
+    margin-left: 15px;
+    padding-bottom: 6px;
+    margin-bottom: 9px;
+    width: 250px;
+  }
+
+  .catalog__link {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-left: 66px;
+    padding-bottom: 25px;
+    padding-top: 19px;
+    width: 150px;
+  }
+
+  .catalog__stats::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-plus.svg");
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    top: 30px;
+    left: 135px;
+    opacity: 0.2;
+  }
+
+  .catalog__stats {
+    border: none;
+  }
+
+  .catalog__stats b {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+    width: 140px;
+    margin-top: 81px;
+    margin-bottom: 26px;
+    padding-left: 93px;
+  }
+
+  .catalog__stats p {
+    font-size: 16px;
+    line-height: 18px;
+    width: 180px;
+    margin-bottom: 67px;
+    margin-left: 73px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__wrapper--mobile {
+    width: 227px;
+  }
+
+  .catalog__item {
+    width: 246px;
+    padding-bottom: 17px;
+  }
+
+  .catalog__part {
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 19px;
+    padding-bottom: 8px;
+    margin-bottom: 7px;
+    width: 167px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .catalog__item--chiken-small img,
+  .catalog__item--fish-small img,
+  .catalog__item--buckwheat-small img,
+  .catalog__item--rice-small img {
+    position: absolute;
+    top: -47px;
+    left: 0;
+    width: 245px;
+    height: auto;
+  }
+
+  .catalog__item--chiken-big img,
+  .catalog__item--fish-big img,
+  .catalog__item--buckwheat-big img {
+    position: absolute;
+    top: -83px;
+    left: 0;
+    width: 245px;
+    height: auto;
+  }
+
+  .catalog__button {
+    width: 170px;
+    margin-left: 19px;
+    margin-bottom: 24px;
+  }
+
+  .catalog__link {
+    padding-left: 29px;
+    padding-top: 19px;
+    padding-bottom: 26px;
+  }
+
+  .catalog__stats {
+    width: 245px;
+  }
+
+  .catalog__item--more {
+    background-color: #ffffff;
+    width: 243px;
+  }
+
+  .catalog__stats::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-plus.svg");
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    top: -110px;
+    left: 59px;
+    opacity: 0.2;
+  }
+}
